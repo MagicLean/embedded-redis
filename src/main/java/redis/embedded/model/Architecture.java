@@ -27,6 +27,7 @@ public enum Architecture {
         } catch (IOException e) {
             throw new OsArchitectureNotFound(e);
         }
+        return x86;
     }
 
     private static boolean isWindows64Bit(final String arch, final String wow64Arch) {
